@@ -9,7 +9,6 @@ import uuid
 
 from multiprocessing import Process
 
-from google.cloud.sql.connector import Connector
 import threading
 app = Flask(__name__)
 
