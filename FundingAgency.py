@@ -1,6 +1,6 @@
 import os 
 
-from google.cloud.sql.connector import Connector
+from google.cloud.sql.connector import connector
 import mysql.connector
 import json
 import sqlalchemy
@@ -30,7 +30,6 @@ with open("sample.json", "w") as outfile:
     outfile.write(json_object)
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "./sample.json"
-connector = Connector()
 
 import subprocess
 from datetime import date, datetime
