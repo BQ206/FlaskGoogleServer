@@ -1,7 +1,6 @@
 import os 
 
 from google.cloud.sql.connector import connector
-import mysql.connector
 import json
 import sqlalchemy
 
